@@ -26,7 +26,7 @@
 
 -(NSString *)stringWithDeliLine:(NSMutableArray *)deliLine{
     NSString *lineLength;
-    NSMutableArray *customerList = [[NSMutableArray alloc]init];
+    NSString *lineIs = @"The line is:";
     if([deliLine count] == 0){
        
         lineLength = @"The line is currently empty.";
@@ -35,14 +35,8 @@
     } else {
         
         for(NSUInteger i = 0; i < (sizeof deliLine) + 1; i++ ){
-           
-            NSString *customerNum = [NSString stringWithFormat:@"\n%u. %@", i + 1, deliLine[i]];
-            [customerList addObject:customerNum];
-        
+            lineLength = [lineIs stringByAppendingString:[NSString stringWithFormat:@"\n%d. %@", i+1, deliLine[i]]];
         }
-        NSString *stringList = [customerList componentsJoinedByString:@" "];
-        lineLength = [NSString stringWithFormat:@"The line is: %@", stringList];
-        NSLog(@"%@", lineLength);
     }
                                 
 
@@ -53,12 +47,7 @@
 
 
 -(NSMutableArray *)addName:(NSString *)name toDeliLine:(NSMutableArray *)deliLine{
-    if (![deliLine containsObject:@"Michael"]) {
-        [deliLine addObject:@"Michael"];
-    } else {
-        [deliLine addObject:@"Grace"];
-    }
-    
+    [deliLine addObject:name];
     return deliLine;
     
 }
