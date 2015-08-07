@@ -38,13 +38,14 @@
            
             NSString *customerNum = [NSString stringWithFormat:@"\n%u. %@", i + 1, deliLine[i]];
             [customerList addObject:customerNum];
-        }
         
-        lineLength = [NSString stringWithFormat:@"The line is: %@", customerList];
+        }
+        NSString *stringList = [customerList componentsJoinedByString:@" "];
+        lineLength = [NSString stringWithFormat:@"The line is: %@", stringList];
         NSLog(@"%@", lineLength);
     }
                                 
-    
+
     return lineLength;
     
 }
