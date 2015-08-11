@@ -13,7 +13,6 @@
 		44E469C018A06414009EE9AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44E469BE18A06414009EE9AA /* InfoPlist.strings */; };
 		44E469C218A06414009EE9AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E469C118A06414009EE9AA /* main.m */; };
 		44E469C618A06414009EE9AA /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E469C518A06414009EE9AA /* FISAppDelegate.m */; };
-		44E469C918A06414009EE9AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E469C718A06414009EE9AA /* Main.storyboard */; };
 		44E469CE18A06414009EE9AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E469CD18A06414009EE9AA /* Images.xcassets */; };
 		44E469D518A06414009EE9AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E469D418A06414009EE9AA /* XCTest.framework */; };
 		44E469D618A06414009EE9AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E469B518A06414009EE9AA /* Foundation.framework */; };
@@ -44,7 +43,6 @@
 		44E469C318A06414009EE9AA /* Objc-deli-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objc-deli-Prefix.pch"; sourceTree = "<group>"; };
 		44E469C418A06414009EE9AA /* FISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
 		44E469C518A06414009EE9AA /* FISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
-		44E469C818A06414009EE9AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44E469CD18A06414009EE9AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		44E469D318A06414009EE9AA /* Objc-deliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objc-deliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E469D418A06414009EE9AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -118,7 +116,6 @@
 			children = (
 				44E469C418A06414009EE9AA /* FISAppDelegate.h */,
 				44E469C518A06414009EE9AA /* FISAppDelegate.m */,
-				44E469C718A06414009EE9AA /* Main.storyboard */,
 				44E469CD18A06414009EE9AA /* Images.xcassets */,
 				44E469BC18A06414009EE9AA /* Supporting Files */,
 			);
@@ -243,7 +240,6 @@
 			files = (
 				44E469CE18A06414009EE9AA /* Images.xcassets in Resources */,
 				44E469C018A06414009EE9AA /* InfoPlist.strings in Resources */,
-				44E469C918A06414009EE9AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,14 +321,6 @@
 				44E469BF18A06414009EE9AA /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		44E469C718A06414009EE9AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44E469C818A06414009EE9AA /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		44E469DD18A06414009EE9AA /* InfoPlist.strings */ = {
