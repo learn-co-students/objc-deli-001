@@ -42,11 +42,6 @@
     
 }
 
-- (NSString*) addName: (NSString*) name
-{
-    return name;
-}
-
 
 - (NSMutableArray*) addName: (NSString*) name toDeliLine: (NSMutableArray*) deliLine;
 {
