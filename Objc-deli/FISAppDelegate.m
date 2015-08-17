@@ -25,22 +25,22 @@
 
 
 -(NSString *)stringWithDeliLine:(NSMutableArray *)deliLine{
-    NSString *lineLength;
-    NSString *lineIs = @"The line is:";
+    NSMutableString *lineIs = [NSMutableString new];
     if([deliLine count] == 0){
        
-        lineLength = @"The line is currently empty.";
-        NSLog(@"%@", lineLength);
+        [lineIs appendString:@"The line is currently empty."];
+        NSLog(@"%@", lineIs);
         
     } else {
-        
-        for(NSUInteger i = 0; i < (sizeof deliLine) + 1; i++ ){
-            lineLength = [lineIs stringByAppendingString:[NSString stringWithFormat:@"\n%d. %@", i+1, deliLine[i]]];
+        [lineIs appendString:@"The line is:"];
+        for(NSUInteger i = 0; i < (deliLine.count); i++ ){
+            NSUInteger numInLine = i + 1;
+            [lineIs appendFormat:@"\n%u. %@", numInLine , deliLine[i]];
         }
     }
-                                
+    
 
-    return lineLength;
+    return lineIs;
     
 }
 
