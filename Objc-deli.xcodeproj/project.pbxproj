@@ -86,7 +86,6 @@
 			children = (
 				44E469BB18A06414009EE9AA /* Objc-deli */,
 				44E469DA18A06414009EE9AA /* Objc-deliTests */,
-				44E469B418A06414009EE9AA /* Frameworks */,
 				44E469B318A06414009EE9AA /* Products */,
 				9949EBBAEEF9FB2C161C4536 /* Pods */,
 			);
@@ -111,6 +110,7 @@
 				B4E0D34E60DD48D3A5665168 /* libPods-Objc-deliTests.a */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		44E469BB18A06414009EE9AA /* Objc-deli */ = {
@@ -141,6 +141,7 @@
 			children = (
 				44E469DB18A06414009EE9AA /* Supporting Files */,
 				D847801A19374CA5005FEBA5 /* FISAppDelegateSpec.m */,
+				44E469B418A06414009EE9AA /* Frameworks */,
 			);
 			path = "Objc-deliTests";
 			sourceTree = "<group>";
