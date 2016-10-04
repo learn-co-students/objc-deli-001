@@ -12,4 +12,17 @@
  
  */
 
+//stringWithDeliLine: should accept an NSMutableArray argument deliLine and return an NSString object.
+
+- (NSString *)stringWithDeliLine:(NSMutableArray *)deliLine;
+
+
+//addName:toDeliLine: should accept an NSString called name and an NSMutableArray called deliLine as arguments, and return an NSMutableArray.
+
+- (NSMutableArray *) addName:(NSString *)name toDeliLine:(NSMutableArray *)deliLine;
+
+//serveNextCustomerInDeliLine: should accept an NSMutableArray called deliLine as an argument and return an NSString.
+
+- (NSString *)serveNextCustomerInDeliLine:(NSMutableArray *)deliLine;
+
 @end
